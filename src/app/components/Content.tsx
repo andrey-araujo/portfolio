@@ -6,25 +6,14 @@ export default function Content(props: ContentProps) {
   return (
     <div
       className={`
-        ${props.className ?? ""} flex border items-center justify-center h-fit`}
+        ${
+          props.className ?? ""
+        } flex flex-col items-center justify-center w-full`}
     >
-      <div className="flex flex-col justify-center gap-20 border w-full mx-60 h-full min-h-dvh pt-28 pb-10">
-        <section className="flex justify-center items-center border w-full h-[400px]">
-          Apresentação
-        </section>
-
-        <section className="flex justify-center items-center border w-full h-[400px]">
-          About
-        </section>
-
-        <section className="flex justify-center items-center border w-full h-[400px]">
-          Habilidades
-        </section>
-
-        <section className="flex justify-center items-center border w-full h-[400px]">
-          Projetos
-        </section>
-      </div>
+      <div className="w-full h-40 rounded-2xl border">About</div>
+      <div className="w-full h-40 rounded-2xl border">Skills</div>
+      <div className="w-full h-40 rounded-2xl border">Projects</div>
+      <div className="w-full h-40 rounded-2xl border">Contacts</div>
     </div>
   );
 }
