@@ -26,5 +26,5 @@ body {
 }
 
 .glassy {
-  @apply bg-white opacity-90 backdrop-blur-2xl shadow-2xl;
+  @apply opacity-90 backdrop-blur-[200px] shadow-2xl shadow-black/50 bg-white/70;
 }
